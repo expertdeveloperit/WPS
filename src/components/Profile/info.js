@@ -1,0 +1,32 @@
+import React, { Component } from 'react';
+
+class Info extends Component {
+    render() {
+        return (
+        <div>  
+            <div className="container-6 mt15">
+                <div className="sec">
+                <h3>Allergies</h3>
+                <p>Eggs, lateex</p>
+                </div>
+            </div>
+            <div className="container-6">
+                <div className="sec">
+                <h3>Medications</h3>
+                <p>XYZ<span>Prescribed 4/10/2018</span></p>
+                <p>ABC<span>Prescribed 4/10/2018</span></p>
+                </div>
+            </div>
+            <div className="container-6">
+                <div className="sec">
+                <h3>Diagnoses</h3>
+                <p>HIV (B20)</p>
+                <p>Opiate use disorder (F11.24)</p>
+                </div>
+            </div>
+        </div>
+        );
+    }
+}
+
+export default Info;
