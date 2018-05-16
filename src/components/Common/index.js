@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
-class Index extends Component {
+class Header extends Component {
     render() {
         return (
             <div className="container" id="header">
@@ -13,7 +13,7 @@ class Index extends Component {
                         </ul>
                     </div>
                     <div className="top-bar-right">
-                        <i className="zmdi zmdi-menu zmdi-hc-2x"></i>
+                      <NavLink to='/profile'> <i className="zmdi zmdi-menu zmdi-hc-2x"></i></NavLink>
                     </div>
                     </div>
                 </div>
@@ -22,4 +22,4 @@ class Index extends Component {
     }
 }
 
-export default Index;
+export default Header;

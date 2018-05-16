@@ -13,7 +13,7 @@
 .blue{
 	background: #1976d3 !important;
 }
-.white{
+.white, .white .zmdi-hc-2x {
 	color: #fff !important;
 }
 .container-1{
@@ -31,11 +31,12 @@
 }
 .logo-container{
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 	display: block;
 }
 .logo-container img{
-	width: 60%;
+	    width: 52%;
+    margin: 12px 0 0;
 }
 .custom-button-1{
 	width: 100%;
@@ -98,8 +99,11 @@ a.buttons:hover{
 	display: table-cell;
 	width: 30px;
 	padding: 15px;
-	font-size: 20px;
+	font-size: 24px;
 	vertical-align: middle;
+}
+.bs1 .zmdi-search {
+	font-size: 24px;
 }
 .bs2{
 	display: table-cell;
@@ -111,11 +115,20 @@ a.buttons:hover{
 .bs3{
 	display: table-cell;
 	width: 30px;
-	font-size: 20px;
-	padding: 10px;
+	font-size: 26px;
+	padding: 10px 20px 0 0;
 	vertical-align: middle;
 }
-
+.wol-come-wrp .buttons {
+	height: 80px;
+	border-radius: 2px;
+}
+.wol-come-wrp .buttons:last-child {
+	height: 50px;
+}
+.wol-come-wrp .buttons:last-child .bs3 {
+	padding: 3px 20px 0 0;
+}
 .gray{
 	background: #f0f0f0;
 }
@@ -125,10 +138,11 @@ a.lists-items{
 	color: #333;
 	border-bottom: 1px solid #ddd;
 }
-a.lists-items:hover{
+a.lists-items:hover, .Alerts-section .lists-items:hover .li2 span, .ol-list .lists-items:hover .li2 span {
 	background: #1976d3;
 	color: #fff;
 }
+
 .li1{
 	display: table-cell;
 	width: 30px;
@@ -140,7 +154,6 @@ a.lists-items:hover{
 	display: block;
 	width: 50px;
 	height: 50px;
-	border-radius: 50%;
 	border: 1px solid #999;
 	text-align: center;
 	overflow: hidden;
@@ -164,10 +177,10 @@ a.lists-items:hover{
 }
 .li3{
 	display: table-cell;
-	width: 30px;
-	font-size: 14px;
-	padding: 20px 10px 5px;
-	vertical-align: top;
+    width: 30px;
+    font-size: 23px;
+    padding: 15px 10px 5px;
+    vertical-align: top;
 }
 .container-3{
 	margin: 5px;
@@ -199,25 +212,32 @@ box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.8);
 	vertical-align: top;
 	width: 130px;
 	display: table-cell;
-	overflow: hidden;
 	height: 130px;
+	position: relative;
 }
 .pr-box-left img{
 	width: 100%;
 	height: auto;
 }
+.pr-box-right p:last-child strong {
+	font-size: 19px;
+	color: #1976d2;
+}
 .pr-box-right{
-	padding: 10px 0 0 20px;
+	padding: 10px 0 0 30px;
 	vertical-align: top;
 	background: #fff;
 	width: 100%;
 	height: 130px;
 }
-.pr-box-right p{
-	font-size: 12px;
-	color: #777;
-	margin: 0;
-	padding: 0 0 5px 0;
+.pr-box-right p {
+    font-size: 13px;
+    color: #777;
+    margin: 6px 0 0 0;
+    padding: 0 0 5px 0;
+}
+.pr-box-right p:first-child {
+    margin: 0;
 }
 .pr-box-right p strong{
 	font-size: 14px;
@@ -239,6 +259,9 @@ box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.8);
 	text-transform: uppercase;
 	padding: 10px;
 }
+.sne-anc:hover {
+	color: #fff;
+}
 .container-5{
 	display: block;
 }
@@ -247,9 +270,9 @@ box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.8);
 	background: 0;
 }
 .tabs .tabs-title a{
-	color: #7ab6f4;
-	font-size: 15px !important;
-	padding: 15px 30px;
+	color: #fff;
+    font-size: 14px !important;
+    padding: 10px 14px;
 } 
 .tabs .tabs-title.is-active a{
 	background: none;
@@ -263,12 +286,6 @@ box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.8);
 .tabs-panel{
 	padding: 10px
 }
-
-.container-6{
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
--moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
-}
 span.dot{
 	display: inline-block !important;
 	font-size: 6px; 
@@ -281,10 +298,12 @@ span.dot{
 .notbold{
 	font-weight: normal;
 }
-.lists-items-anc{
-	padding: 10px;
-	line-height: 20px;
-	display: block;
+.lists-items-anc {
+    padding: 10px;
+    line-height: 20px;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
 }
 .red{
 	color: #f00;
@@ -302,12 +321,12 @@ span.dot{
 .sec p{
 	font-weight: bold;
 }
-.sec p span{
-	font-weight: normal;
-	display: block;
-	line-height: 17px;
-	color: #666;
-	font-size: 14px;
+.sec p span {
+    font-weight: normal;
+    display: block;
+    line-height: 18px;
+    color: #666;
+    font-size: 16px;
 }
 .c-heading{
 	vertical-align: middle;
@@ -318,13 +337,13 @@ span.dot{
 	font-weight: bold;
 }
 .c-heading i{
-	font-size: 30px;
+	font-size: 40px;
 	padding-right: 5px;
 }
 .c-heading span{
 	display: inline-block;
 	position: relative;
-    top: -4px;
+    top: -6px;
 }
 .fixed-top{
 	position: fixed;
@@ -336,3 +355,192 @@ span.dot{
 .mt55{
 	margin-top: 55px !important;
 }
+
+.profile-update h1 {
+	color: #fff;
+    padding: 7.2px 15px;
+    margin: 0;
+    font-size: 22px;
+}
+/*CSS for Search*/
+.search{
+	margin: 10px 15px 24px 15px;
+}
+.search input{
+	padding: 25px 45px 25px 25px;
+    box-shadow: 0px 1px 1px 1px #ccc5c5;
+    border: none;
+}
+.search span{
+	top: 9px !important;
+	font-size: 23px !important;
+}
+.no-margin{
+	margin: 0 !important;
+}
+.App{
+	background-color: #f1f1f1;
+}
+.recentSearches .li1 span{
+	border-radius: 0 !important;
+}
+.searchResult {
+    position: absolute;
+    top: 51px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0 3px 8px rgba(51, 51, 51, 0.5);
+}
+
+.searchResult ul {
+    list-style: none;
+    max-height: 119px;
+    overflow-y: scroll;
+    background: #fff;
+    width: 100%;
+    border-color: #fff;
+    margin: 0;
+}
+
+.searchResult ul li {
+    padding: 7px 27px;
+    position: relative;
+}
+.diagnoses li span {
+    display: block;
+    font-size: 21px;
+    line-height: 28px;
+    position: absolute;
+    right: 9px;
+    top: 0;
+}
+/*CSS for Search ends*/
+/*location CSS*/
+.locationslist{
+    padding: 15px;
+}
+	.locationslist .li1 span {
+    width: 37px;
+    text-align: left;
+}
+.no_border{border-bottom: none !important;}
+.locationslist .li1 span{border: none !important; border-radius: 0 !important;}
+.locationslist .li1 {padding: 0 !important}
+.locationslist .li12 {font-size: 14px !important;}
+.location {padding: -5px !important;}
+.location .sne{padding: 15px 0 !important;font-size: 14px;}
+.margin_bot{margin-bottom: 5px;}
+.width_fifty{width: 50%;max-width: 50%;display: inline-block;text-align: center;}
+.encounter_btn .blue_btn{font-size: 20px; color:#1976d2; }
+.encounter_btn {padding:15px 10px;}
+.table_row{display: table-row !important;}
+/*location CSS ends*/
+/*CSS For Details*/
+.pr-box-left i{
+	font-size: 130px;
+	padding: 0 0 0 15px; 
+}
+.viewOn{
+	color: #1779ba !important;
+}
+.encounterMap .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom{
+	display: none;
+}
+.encounterMap .gm-style button{
+	display: none;
+}
+
+span.currentLocation {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    background: #fff;
+    padding: 6px 14px;;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    box-shadow: 0 2px 11px rgba(99, 99, 99, 0.83);
+    color: #1976d2;
+}
+.encounterMap {
+	position: relative;
+}
+span.currentLocation i{
+	 -ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Safari 3-8 */
+    transform: rotate(30deg);
+    font-size: 30px;
+ }
+ .accordion__body{padding: 0 !important;}
+ span.cross {
+    padding: 0 0 0 200px;
+}
+h3.close{
+	text-align: right;
+}
+
+
+.direct label{
+    color: gray;
+    background: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0px 1px 8px rgba(128, 128, 128, 0.5);
+    margin-right: 4px !important;
+    margin-left: 0px !important;
+    padding: 14px 18px;
+    font-size: 16px !important;
+    margin: 0 !important;
+}
+.direct-Indirect.direct label{
+	    padding: 14px 30px;
+}
+.direct-Indirect.direct span:nth-child(2) {
+	margin: 0 10px;
+}
+
+.encounter_btn .btn {
+    font-size: 20px;
+    font-weight: 600;
+    background: #1976d2;
+    margin: 0;
+    border-radius: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 0;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+.direct label.active{background-color: #1976d2 !important;color:#fff;}
+.mode, .duration {
+    border: 2px solid #1976d2;
+}
+.mode {
+	box-shadow:none;
+}
+i.zmdi.zmdi-alert-circle {
+    font-size: 17px;
+    vertical-align: middle;
+}
+.encounter .accordion form .mode span {
+	width: 30%;
+	display: inline-block;
+}
+.encounter .accordion form .mode label, .encounter .accordion form .duration label {
+	width: 100%;
+	border-left: 2px solid #1976d2;
+	border-radius: 0;
+}
+.encounter .accordion form .mode span:first-child {
+	border-left: 0;
+	width: 40%;
+}
+.encounter .accordion form .duration span {
+		width: 33.333%;
+	display: inline-block;
+}
+.icons_map{color: #d0021b;}
